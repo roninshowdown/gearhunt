@@ -1,0 +1,44 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="Gearhunt"
+config/description="Top-down roguelite arena brawler."
+run/main_scene="res://scenes/main.tscn"
+config/features=PackedStringArray("4.7", "GL Compatibility")
+
+[autoload]
+
+Content="*res://src/app/content_db.gd"
+Save="*res://src/meta/save_service.gd"
+Inputs="*res://src/input/input_router.gd"
+Net="*res://src/net/net_service.gd"
+Session="*res://src/app/session.gd"
+Sfx="*res://src/app/sfx_service.gd"
+
+[display]
+
+window/size/viewport_width=1920
+window/size/viewport_height=1080
+window/size/window_width_override=1600
+window/size/window_height_override=900
+window/stretch/mode="canvas_items"
+window/stretch/aspect="expand"
+
+[internationalization]
+
+locale/translations=PackedStringArray("res://localization/strings.de.translation", "res://localization/strings.en.translation")
+
+[rendering]
+
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
+environment/defaults/default_clear_color=Color(0.02, 0.02, 0.04, 1)

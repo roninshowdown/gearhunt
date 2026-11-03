@@ -1,0 +1,99 @@
+keys,de,en
+GAME_TITLE,Gearhunt,Gearhunt
+MENU_PLAY,Spielen,Play
+MENU_HOST,Online-Koop hosten,Host online co-op
+MENU_JOIN,Online-Koop beitreten,Join online co-op
+MENU_META,Fortschritt,Progression
+MENU_OPTIONS,Optionen,Options
+MENU_QUIT,Beenden,Quit
+MENU_BACK,Zurück,Back
+MENU_ADDRESS,IP-Adresse des Hosts,Host IP address
+MENU_CONNECT,Verbinden,Connect
+MENU_CONNECTING,Verbinde …,Connecting …
+OPT_FULLSCREEN,Vollbild,Fullscreen
+OPT_VOLUME,Lautstärke,Volume
+OPT_LANGUAGE,Sprache,Language
+LOBBY_TITLE,Wähle deine Helden,Choose your heroes
+LOBBY_HINT,Enter: mit Tastatur beitreten  ·  A am Controller: mit Controller beitreten  ·  B oder Esc: verlassen,Enter: join with keyboard  ·  A on a controller: join with it  ·  B or Esc: leave
+LOBBY_KEYBOARD,P%d  ·  Tastatur + Maus,P%d  ·  Keyboard + mouse
+LOBBY_CONTROLLER,P%d  ·  Controller %d,P%d  ·  Controller %d
+LOBBY_EMPTY,Freier Platz,Open slot
+LOBBY_START,Run starten,Start run
+LOBBY_WAITING,Warte auf den Host …,Waiting for host …
+LOBBY_LOCKED,Gesperrt,Locked
+LOBBY_REMOTE,Online-Spieler,Online player
+LOBBY_BIOME,Welt,World
+LOBBY_YOU_HOST,Du bist Host auf Port %d,You are hosting on port %d
+HUD_WAVE,Welle %d / %d,Wave %d / %d
+HUD_BOSS,Boss,Boss
+HUD_DOWN,Gefallen,Down
+SHOP_TITLE,Laden – nach Welle %d,Shop – after wave %d
+SHOP_REROLL,Neu würfeln (%d),Reroll (%d)
+SHOP_READY,Bereit,Ready
+SHOP_WAITING,Warte auf die anderen …,Waiting for the others …
+SHOP_SOLD,Gekauft,Bought
+SHOP_MATERIALS,Material: %d,Materials: %d
+SHOP_WEAPONS,Waffen: %d / %d,Weapons: %d / %d
+SHOP_KIND_WEAPON,Waffe,Weapon
+SHOP_KIND_ITEM,Gegenstand,Item
+END_VICTORY,Sieg!,Victory!
+END_DEFEAT,Gefallen,Defeated
+END_SUMMARY,Welle %d erreicht  ·  %d Gegner besiegt,Reached wave %d  ·  %d enemies defeated
+END_REWARD,+%d Seelenstaub,+%d soul dust
+PAUSE_TITLE,Pause,Paused
+PAUSE_RESUME,Weiter,Resume
+PAUSE_QUIT,Run abbrechen,Abandon run
+META_TITLE,Fortschritt,Progression
+META_DUST,Seelenstaub: %d,Soul dust: %d
+META_RANK,Stufe %d / %d,Rank %d / %d
+META_BUY,Kaufen (%d),Buy (%d)
+META_MAX,Maximal,Maxed
+NET_HOST_LOST,Die Verbindung zum Host wurde getrennt.,Connection to the host was lost.
+NET_CONNECT_FAILED,Verbindung fehlgeschlagen.,Connection failed.
+NET_HOST_FAILED,Hosten nicht möglich. Ist der Port schon belegt?,Could not host. Is the port already in use?
+CHAR_WARRIOR,Krieger,Warrior
+CHAR_WARRIOR_DESC,"Robust und gepanzert, langsamer, startet mit dem Schwert.","Sturdy and armoured, slower, starts with a sword."
+CHAR_HUNTER,Jäger,Hunter
+CHAR_HUNTER_DESC,"Schnell und zerbrechlich, startet mit dem Bogen.","Fast and fragile, starts with a bow."
+WEAPON_SWORD,Schwert,Sword
+WEAPON_SWORD_DESC,Schneller Hieb im Bogen.,Fast arcing slash.
+WEAPON_AXE,Streitaxt,Battle axe
+WEAPON_AXE_DESC,"Langsam, breit und schwer.","Slow, wide and heavy."
+WEAPON_BOW,Bogen,Bow
+WEAPON_BOW_DESC,Schnelle Pfeile.,Fast arrows.
+WEAPON_CROSSBOW,Armbrust,Crossbow
+WEAPON_CROSSBOW_DESC,Bolzen durchschlagen mehrere Gegner.,Bolts pierce several enemies.
+WEAPON_FIRE_STAFF,Feuerstab,Fire staff
+WEAPON_FIRE_STAFF_DESC,Explodiert beim Einschlag.,Explodes on impact.
+ITEM_WHETSTONE,Wetzstein,Whetstone
+ITEM_WHETSTONE_DESC,+8 % Schaden,+8 % damage
+ITEM_RATION,Proviant,Rations
+ITEM_RATION_DESC,+5 maximale Leben,+5 max HP
+ITEM_PLATE,Plattenteil,Plating
+ITEM_PLATE_DESC,+3 Rüstung,+3 armor
+ITEM_BOOTS,Wanderstiefel,Boots
+ITEM_BOOTS_DESC,+25 Tempo,+25 speed
+ITEM_QUIVER,Leichter Griff,Light grip
+ITEM_QUIVER_DESC,+10 % Angriffstempo,+10 % attack speed
+ITEM_MAGNET_CHARM,Lockamulett,Lure charm
+ITEM_MAGNET_CHARM_DESC,+70 Aufsammelradius,+70 pickup range
+ITEM_TROLL_BLOOD,Trollblut,Troll blood
+ITEM_TROLL_BLOOD_DESC,+3 Regeneration,+3 regeneration
+ENEMY_JELLY,Qualle,Jelly
+ENEMY_URCHIN,Seeigel,Urchin
+ENEMY_SPITTER_EEL,Speiaal,Spitter eel
+ENEMY_IMP,Imp,Imp
+ENEMY_HELLHOUND,Höllenhund,Hellhound
+ENEMY_CULTIST,Kultist,Cultist
+ENEMY_KRAKEN,Tiefenkrake,Deep kraken
+ENEMY_DEMON_LORD,Dämonenfürst,Demon lord
+BIOME_SUNKEN_DEEP,Versunkene Tiefe,Sunken Deep
+BIOME_SUNKEN_DEEP_DESC,Ein leuchtendes Riff am Meeresgrund.,A glowing reef on the sea floor.
+BIOME_DEMON_TOWER,Dämonenturm,Demon Tower
+BIOME_DEMON_TOWER_DESC,Lava zwischen uralten Steinen.,Lava between ancient stones.
+META_VITALITY,Vitalität,Vitality
+META_VITALITY_DESC,+2 maximale Leben pro Stufe,+2 max HP per rank
+META_MIGHT,Macht,Might
+META_MIGHT_DESC,+3 % Schaden pro Stufe,+3 % damage per rank
+META_SWIFTNESS,Flinkheit,Swiftness
+META_SWIFTNESS_DESC,+8 Tempo pro Stufe,+8 speed per rank

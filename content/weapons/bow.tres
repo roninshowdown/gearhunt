@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="WeaponDef" load_steps=4 format=3]
+
+[ext_resource type="Script" path="res://src/sim/attacks/projectile_attack.gd" id="1"]
+[ext_resource type="Script" path="res://src/content/weapon_def.gd" id="2"]
+
+[sub_resource type="Resource" id="s1"]
+script = ExtResource("1")
+speed = 1050.0
+range_px = 820.0
+radius = 9.0
+knockback = 90.0
+
+[resource]
+script = ExtResource("2")
+id = "bow"
+display_name = "WEAPON_BOW"
+description = "WEAPON_BOW_DESC"
+price = 18
+damage = 9.0
+cooldown = 0.5
+attack = SubResource("s1")
+visual = 2
+color = Color(0.62, 1.0, 0.55, 1)

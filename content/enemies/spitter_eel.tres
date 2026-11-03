@@ -1,0 +1,36 @@
+[gd_resource type="Resource" script_class="EnemyDef" load_steps=6 format=3]
+
+[ext_resource type="Script" path="res://src/sim/behaviors/shooter_behavior.gd" id="1"]
+[ext_resource type="Script" path="res://src/content/creature_look.gd" id="2"]
+[ext_resource type="Script" path="res://src/content/enemy_def.gd" id="3"]
+
+[sub_resource type="Resource" id="s1"]
+script = ExtResource("1")
+preferred_range = 500.0
+projectile_damage = 3.0
+
+[sub_resource type="Resource" id="s2"]
+script = ExtResource("2")
+body_color = Color(0.3, 0.9, 0.72, 1)
+dark_color = Color(0.03, 0.28, 0.32, 1)
+accent_color = Color(0.9, 1.0, 0.5, 1)
+lobes = 3
+lobe_amount = 0.16
+spikes = 0
+spike_length = 0.0
+eyes = 2
+organelles = 0.5
+wobble_speed = 2.5
+
+[resource]
+script = ExtResource("3")
+id = "spitter_eel"
+display_name = "ENEMY_SPITTER_EEL"
+max_hp = 16.0
+speed = 120.0
+contact_damage = 2.0
+radius = 28.0
+material_drop = 2
+behavior = SubResource("s1")
+is_boss = false
+look = SubResource("s2")

@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ItemDef" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://src/content/item_def.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = "magnet_charm"
+display_name = "ITEM_MAGNET_CHARM"
+description = "ITEM_MAGNET_CHARM_DESC"
+price = 12
+stats = {
+"pickup_range": 70.0
+}
+icon_color = Color(0.8, 0.6, 1.0, 1)

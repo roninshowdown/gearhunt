@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ItemDef" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://src/content/item_def.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = "ration"
+display_name = "ITEM_RATION"
+description = "ITEM_RATION_DESC"
+price = 14
+stats = {
+"max_hp": 5.0
+}
+icon_color = Color(0.5, 1.0, 0.5, 1)

@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="MetaUpgradeDef" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://src/content/meta_upgrade_def.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = "might"
+display_name = "META_MIGHT"
+description = "META_MIGHT_DESC"
+stat = "damage_pct"
+per_rank = 3.0
+max_rank = 5
+base_cost = 35
+cost_step = 30

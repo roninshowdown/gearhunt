@@ -1,0 +1,34 @@
+[gd_resource type="Resource" script_class="CharacterDef" load_steps=5 format=3]
+
+[ext_resource type="Resource" path="res://content/weapons/sword.tres" id="1"]
+[ext_resource type="Script" path="res://src/content/creature_look.gd" id="2"]
+[ext_resource type="Script" path="res://src/content/character_def.gd" id="3"]
+
+[sub_resource type="Resource" id="s1"]
+script = ExtResource("2")
+body_color = Color(0.93, 0.42, 0.34, 1)
+dark_color = Color(0.32, 0.06, 0.09, 1)
+accent_color = Color(1.0, 0.8, 0.45, 1)
+lobes = 6
+lobe_amount = 0.04
+spikes = 0
+spike_length = 0.0
+eyes = 2
+organelles = 0.45
+wobble_speed = 2.0
+
+[resource]
+script = ExtResource("3")
+id = "warrior"
+display_name = "CHAR_WARRIOR"
+description = "CHAR_WARRIOR_DESC"
+unlock_cost = 0
+base_stats = {
+"max_hp": 10.0,
+"armor": 3.0,
+"move_speed": -15.0
+}
+starting_weapon = ExtResource("1")
+look = SubResource("s1")
+headgear = 0
+headgear_color = Color(0.74, 0.8, 0.9, 1)

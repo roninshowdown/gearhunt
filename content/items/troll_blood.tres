@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ItemDef" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://src/content/item_def.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = "troll_blood"
+display_name = "ITEM_TROLL_BLOOD"
+description = "ITEM_TROLL_BLOOD_DESC"
+price = 20
+stats = {
+"hp_regen": 3.0
+}
+icon_color = Color(0.3, 0.9, 0.4, 1)

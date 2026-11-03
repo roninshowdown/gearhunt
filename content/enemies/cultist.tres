@@ -1,0 +1,39 @@
+[gd_resource type="Resource" script_class="EnemyDef" load_steps=6 format=3]
+
+[ext_resource type="Script" path="res://src/sim/behaviors/shooter_behavior.gd" id="1"]
+[ext_resource type="Script" path="res://src/content/creature_look.gd" id="2"]
+[ext_resource type="Script" path="res://src/content/enemy_def.gd" id="3"]
+
+[sub_resource type="Resource" id="s1"]
+script = ExtResource("1")
+preferred_range = 540.0
+fire_interval = 2.6
+count = 3
+spread_degrees = 30.0
+projectile_damage = 2.5
+
+[sub_resource type="Resource" id="s2"]
+script = ExtResource("2")
+body_color = Color(0.55, 0.25, 0.75, 1)
+dark_color = Color(0.14, 0.04, 0.26, 1)
+accent_color = Color(1.0, 0.35, 0.65, 1)
+lobes = 3
+lobe_amount = 0.1
+spikes = 0
+spike_length = 0.0
+eyes = 1
+organelles = 0.6
+wobble_speed = 2.0
+
+[resource]
+script = ExtResource("3")
+id = "cultist"
+display_name = "ENEMY_CULTIST"
+max_hp = 18.0
+speed = 110.0
+contact_damage = 2.0
+radius = 28.0
+material_drop = 2
+behavior = SubResource("s1")
+is_boss = false
+look = SubResource("s2")

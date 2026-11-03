@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="WeaponDef" load_steps=4 format=3]
+
+[ext_resource type="Script" path="res://src/sim/attacks/melee_arc_attack.gd" id="1"]
+[ext_resource type="Script" path="res://src/content/weapon_def.gd" id="2"]
+
+[sub_resource type="Resource" id="s1"]
+script = ExtResource("1")
+reach = 200.0
+arc_degrees = 170.0
+knockback = 420.0
+
+[resource]
+script = ExtResource("2")
+id = "axe"
+display_name = "WEAPON_AXE"
+description = "WEAPON_AXE_DESC"
+price = 30
+damage = 24.0
+cooldown = 1.15
+attack = SubResource("s1")
+visual = 1
+color = Color(1.0, 0.72, 0.45, 1)

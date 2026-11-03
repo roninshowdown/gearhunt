@@ -1,0 +1,35 @@
+[gd_resource type="Resource" script_class="EnemyDef" load_steps=6 format=3]
+
+[ext_resource type="Script" path="res://src/sim/behaviors/charge_behavior.gd" id="1"]
+[ext_resource type="Script" path="res://src/content/creature_look.gd" id="2"]
+[ext_resource type="Script" path="res://src/content/enemy_def.gd" id="3"]
+
+[sub_resource type="Resource" id="s1"]
+script = ExtResource("1")
+dash_speed = 900.0
+
+[sub_resource type="Resource" id="s2"]
+script = ExtResource("2")
+body_color = Color(0.5, 0.2, 0.28, 1)
+dark_color = Color(0.13, 0.03, 0.08, 1)
+accent_color = Color(1.0, 0.42, 0.12, 1)
+lobes = 7
+lobe_amount = 0.08
+spikes = 10
+spike_length = 0.22
+eyes = 3
+organelles = 0.3
+wobble_speed = 2.0
+
+[resource]
+script = ExtResource("3")
+id = "hellhound"
+display_name = "ENEMY_HELLHOUND"
+max_hp = 28.0
+speed = 120.0
+contact_damage = 4.0
+radius = 34.0
+material_drop = 2
+behavior = SubResource("s1")
+is_boss = false
+look = SubResource("s2")

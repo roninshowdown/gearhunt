@@ -1,0 +1,42 @@
+[gd_resource type="Resource" script_class="EnemyDef" load_steps=7 format=3]
+
+[ext_resource type="Resource" path="res://content/enemies/imp.tres" id="1"]
+[ext_resource type="Script" path="res://src/sim/behaviors/shooter_behavior.gd" id="2"]
+[ext_resource type="Script" path="res://src/content/creature_look.gd" id="3"]
+[ext_resource type="Script" path="res://src/content/enemy_def.gd" id="4"]
+
+[sub_resource type="Resource" id="s1"]
+script = ExtResource("2")
+preferred_range = 360.0
+fire_interval = 1.3
+count = 16
+spread_degrees = 360.0
+projectile_speed = 330.0
+projectile_damage = 3.0
+also_summons = ExtResource("1")
+
+[sub_resource type="Resource" id="s2"]
+script = ExtResource("3")
+body_color = Color(0.75, 0.14, 0.16, 1)
+dark_color = Color(0.2, 0.02, 0.05, 1)
+accent_color = Color(1.0, 0.6, 0.1, 1)
+lobes = 5
+lobe_amount = 0.1
+spikes = 12
+spike_length = 0.3
+eyes = 3
+organelles = 0.8
+wobble_speed = 1.5
+
+[resource]
+script = ExtResource("4")
+id = "demon_lord"
+display_name = "ENEMY_DEMON_LORD"
+max_hp = 1600.0
+speed = 85.0
+contact_damage = 6.0
+radius = 96.0
+material_drop = 20
+behavior = SubResource("s1")
+is_boss = true
+look = SubResource("s2")

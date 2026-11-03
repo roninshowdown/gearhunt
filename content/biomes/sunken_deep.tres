@@ -1,0 +1,41 @@
+[gd_resource type="Resource" script_class="BiomeDef" load_steps=11 format=3]
+
+[ext_resource type="Resource" path="res://content/enemies/jelly.tres" id="1"]
+[ext_resource type="Script" path="res://src/content/spawn_entry.gd" id="2"]
+[ext_resource type="Resource" path="res://content/enemies/urchin.tres" id="3"]
+[ext_resource type="Resource" path="res://content/enemies/spitter_eel.tres" id="4"]
+[ext_resource type="Shader" path="res://assets/shaders/biome_water.gdshader" id="5"]
+[ext_resource type="Resource" path="res://content/enemies/kraken.tres" id="6"]
+[ext_resource type="Script" path="res://src/content/biome_def.gd" id="7"]
+
+[sub_resource type="Resource" id="s1"]
+script = ExtResource("2")
+enemy = ExtResource("1")
+weight = 5.0
+first_wave = 1
+
+[sub_resource type="Resource" id="s2"]
+script = ExtResource("2")
+enemy = ExtResource("3")
+weight = 2.0
+first_wave = 3
+
+[sub_resource type="Resource" id="s3"]
+script = ExtResource("2")
+enemy = ExtResource("4")
+weight = 2.0
+first_wave = 4
+
+[resource]
+script = ExtResource("7")
+id = "sunken_deep"
+display_name = "BIOME_SUNKEN_DEEP"
+description = "BIOME_SUNKEN_DEEP_DESC"
+spawns = Array[ExtResource("2")]([SubResource("s1"), SubResource("s2"), SubResource("s3")])
+boss = ExtResource("6")
+background_shader = ExtResource("5")
+ambient = 0
+color_a = Color(0.015, 0.12, 0.24, 1)
+color_b = Color(0.03, 0.42, 0.5, 1)
+color_c = Color(0.5, 1.0, 0.9, 1)
+splat_tint = Color(0.3, 0.85, 1.0, 1)

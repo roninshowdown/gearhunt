@@ -1,0 +1,35 @@
+[gd_resource type="Resource" script_class="CharacterDef" load_steps=5 format=3]
+
+[ext_resource type="Resource" path="res://content/weapons/bow.tres" id="1"]
+[ext_resource type="Script" path="res://src/content/creature_look.gd" id="2"]
+[ext_resource type="Script" path="res://src/content/character_def.gd" id="3"]
+
+[sub_resource type="Resource" id="s1"]
+script = ExtResource("2")
+body_color = Color(0.43, 0.82, 0.46, 1)
+dark_color = Color(0.05, 0.26, 0.2, 1)
+accent_color = Color(0.9, 1.0, 0.55, 1)
+lobes = 5
+lobe_amount = 0.05
+spikes = 0
+spike_length = 0.0
+eyes = 2
+organelles = 0.45
+wobble_speed = 2.0
+
+[resource]
+script = ExtResource("3")
+id = "hunter"
+display_name = "CHAR_HUNTER"
+description = "CHAR_HUNTER_DESC"
+unlock_cost = 0
+base_stats = {
+"max_hp": -3.0,
+"move_speed": 30.0,
+"attack_speed_pct": 8.0,
+"pickup_range": 40.0
+}
+starting_weapon = ExtResource("1")
+look = SubResource("s1")
+headgear = 1
+headgear_color = Color(0.2, 0.5, 0.3, 1)
