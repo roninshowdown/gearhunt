@@ -13,7 +13,7 @@ GearHunt ist ein Fantasy-Roguelike mit 2,5D-Top-down-Darstellung und einer poten
 
 Die 2,5D-Darstellung ist rein visuell: Die Welt wird dreidimensional dargestellt und beleuchtet, während das Gameplay weiterhin auf einer Ebene stattfindet. Es gibt keine Sprunghöhe, erhöhten Spielebenen oder allgemeine Ausweichrolle. Besondere Bewegungs- und Ausweichfähigkeiten gehören zur jeweiligen Klassenauswahl und belegen gegebenenfalls einen der aktiven Fähigkeitsslots.
 
-Als Grafik- und Produktionsanspruch dient das Niveau des Spiels *Ravenswatch*. Dieser Vergleich bezieht sich ausschließlich auf die angestrebte grafische Qualität und nicht auf das Aussehen von GearHunt: Spielwelt, Artstyle und Setting sollen nicht wie in Ravenswatch wirken.
+Als Grafik- und Produktionsanspruch dient das Niveau des Spiels *Ravenswatch*. Übernommen werden dessen Rendertechnik (Comic-/Cel-Shading mit Outlines), Kameraprinzip und Lesbarkeit. Spielwelt, Setting und Farbpalette sollen dagegen nicht wie in Ravenswatch wirken, sondern orientieren sich an *Sacred 2*. Details regelt Abschnitt 1.9.
 
 ### 1.2 Stages und Erkundung
 
@@ -155,6 +155,23 @@ Wiederbelebungsdauer, Bedingungen, zurückgewonnene Lebenspunkte und ein möglic
 
 **Dauerhafte Progression zwischen verschiedenen Runs bleibt ausdrücklich unentschieden.** Weder dauerhafte Werteverbesserungen noch ein bestimmter Freischaltungsumfang sind damit bereits beschlossen.
 
+### 1.9 Visuelle Gestaltung
+
+Die verbindlichen visuellen Leitlinien stehen in [Design-Guidelines.md](Design-Guidelines.md). Kurzformel: *Ravenswatch-Technik und -Lesbarkeit, gefüllt mit der Farbe und Welt von Sacred 2.*
+
+Bestätigt sind:
+
+- Comic-/Cel-Shading mit Outlines im Stil von Ravenswatch
+- Farbpalette, Licht und Setting nach dem Vorbild von Sacred 2: klassische, lebendige High-Fantasy wie Ancaria mit dunklen Momenten
+- Tag-Biome hell und farbig; Höhlen, Lava und Bossarenen dunkel mit starken Licht-Akzenten
+- feste, steile Kamera (etwa 55°) ohne Rotation, mit dynamischem Zoom nach Spielerabstand
+- leicht heroisch überzeichnete Figurenproportionen mit klaren Silhouetten
+- feste Farbcodierung: Gegnergefahr Rot/Orange, Spieler-Effekte in Klassenfarben, Heilung Grün, Loot/Gold Gelb
+- HUD-Layout wie Ravenswatch (Leiste unten, Minimap rechts) mit Fantasy-Ornamentik aus Gold, Holz und Pergament
+- kein Tag/Nacht-Zyklus; Tageszeit und Stimmung sind fest pro Stage bzw. Biom
+
+Klassenfarben, Biomkatalog, der Farbkonflikt zwischen Heilung und Seltenheit Grün sowie die technische Umsetzung (Renderer, Umstieg von 2D auf 2,5D, Schrift, Asset-Pipeline) sind noch offen.
+
 ## 2. Unbestätigter Vorschlag: Ausrüstungswerte
 
 Die folgenden 20 Werte sind ein Diskussionsvorschlag und **keine bereits beschlossene Attributliste**. Formeln, Einheiten, Grenzen, Wechselwirkungen und Geltungsbereiche sind noch zu bestimmen.
@@ -197,6 +214,7 @@ Die nächste Themenrunde beginnt bei den zuletzt geänderten **Talentbäumen pro
 7. **Koop und Ausfälle:** Wiederbeleben, Wiederverbinden, spätere Beitritte, Zustimmung zum Portalwechsel bei fehlenden Teilnehmern und gemeinsame Kameragrenzen.
 8. **Speichern und dauerhafte Progression:** Abbruch innerhalb einer Stage, Fortsetzung eines gespeicherten Runs und mögliche Freischaltungen oder Meta-Progression zwischen Runs.
 9. **Technische Einordnung:** Die konkrete Verwendung der ActionSystem-Spec und ihrer Authoring-/MCP-Zugänge im bestehenden Godot-Projekt gesondert entscheiden. Die ActionSystem-Vorlage stammt aus einem Unreal-Projekt; Übernahme der Spielregeln und technische Integration sind getrennte Entscheidungen.
+10. **Visuelle Umsetzung:** Offene Punkte aus [Design-Guidelines.md](Design-Guidelines.md), Abschnitte 10 und 11: Renderer, 2,5D-Umbau der Darstellung, Schrift, Asset-Pipeline, Klassenfarben und der Konflikt zwischen Heilung und Seltenheit Grün.
 
 ## 4. Verwendung dieses Arbeitsstands
 
