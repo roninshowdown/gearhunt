@@ -9,9 +9,11 @@ Diese Datei sichert die bislang bestätigte Spieldefinition. Sie beschreibt das 
 
 ### 1.1 Grundidee und Darstellung
 
-GearHunt ist ein Fantasy-Roguelike mit reiner 2D-Top-down-Darstellung und einer potenziell unbegrenzten Folge prozedural generierter Stages. Der Schwerpunkt liegt auf Online- und lokalem PvE-Koop; das Spiel ist auch alleine spielbar.
+GearHunt ist ein Fantasy-Roguelike mit 2,5D-Top-down-Darstellung und einer potenziell unbegrenzten Folge prozedural generierter Stages. Der Schwerpunkt liegt auf Online- und lokalem PvE-Koop; das Spiel ist auch alleine spielbar.
 
-Es gibt keine Sprunghöhe, erhöhten Spielebenen oder allgemeine Ausweichrolle. Besondere Bewegungs- und Ausweichfähigkeiten gehören zur jeweiligen Klassenauswahl und belegen gegebenenfalls einen der aktiven Fähigkeitsslots.
+Die 2,5D-Darstellung ist rein visuell: Die Welt wird dreidimensional dargestellt und beleuchtet, während das Gameplay weiterhin auf einer Ebene stattfindet. Es gibt keine Sprunghöhe, erhöhten Spielebenen oder allgemeine Ausweichrolle. Besondere Bewegungs- und Ausweichfähigkeiten gehören zur jeweiligen Klassenauswahl und belegen gegebenenfalls einen der aktiven Fähigkeitsslots.
+
+Als Grafik- und Produktionsanspruch dient das Niveau des Spiels *Ravenswatch*. Dieser Vergleich bezieht sich ausschließlich auf die angestrebte grafische Qualität und nicht auf das Aussehen von GearHunt: Spielwelt, Artstyle und Setting sollen nicht wie in Ravenswatch wirken.
 
 ### 1.2 Stages und Erkundung
 
@@ -114,7 +116,7 @@ Sandbox-Regeln wie gegnerische menschliche Teams, feste NPC-Wellen, Bearbeitung 
 - Die frühere Obergrenze von Level 40 ist aufgehoben.
 - Die frühere Idee zweier klassenweiter Talentpfade, beispielsweise Wut und Verteidigung, ist durch Talentbäume pro aktiver Fähigkeit ersetzt.
 - Regeln für das Mischen solcher früheren klassenweiten Pfade werden nicht automatisch auf die neuen Fähigkeitstalentbäume übertragen.
-- Der zeitweise besprochene taktische Sprung ist durch die Entscheidung für reines 2D aufgehoben.
+- Der zeitweise besprochene taktische Sprung bleibt aufgehoben; die 2,5D-Darstellung ist rein visuell und führt keine spielerische Sprunghöhe ein.
 
 Aufbau und Größe der Fähigkeitstalentbäume, Voraussetzungen, Punktekosten, mögliche Fähigkeitsverbesserungen und ein eventuelles Zurücksetzen der Talentwahl sind noch zu definieren.
 
