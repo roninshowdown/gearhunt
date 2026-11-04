@@ -218,6 +218,15 @@ Diese Punkte widersprechen dem aktuellen Prototyp oder müssen vor der Umsetzung
 - Kamera-Zoomgrenzen und Verhalten bei zu großem Spielerabstand.
 - Outline-Stärken als konkrete Pixelwerte, sobald erste Szenen existieren.
 
+### TODO – nächste Design-Q&A
+
+- [ ] **Klassenfarben bestätigen:** Vorschlag aus 6.2 prüfen (Krieger Stahlblau, Jäger Türkis, Magier Violett, Paladin Elfenbein-Himmelblau) und zusätzliche Spielerfarben für den Koop festlegen.
+- [ ] **Farbkonflikt Seltenheit/Heilung auflösen:** Seltenheiten auf Weiß/Blau/Lila umstellen oder Grün beibehalten und Heilung klar abgrenzen. Danach GameSpec 1.7 anpassen.
+- [ ] **Renderer entscheiden:** Compatibility-Renderer behalten (breite Hardware-Unterstützung, eingeschränktes Licht) oder auf Forward+ wechseln (Ravenswatch-Niveau leichter erreichbar). Danach `docs/ARCHITECTURE.md` anpassen.
+- [ ] **2,5D-Umbau planen:** Darstellung von 2D-Shadern und `EntityBatch` auf 3D-Figuren und 3D-Umgebung umstellen; `src/sim` bleibt unberührt.
+- [ ] **Schrift ersetzen:** OFL-lizenzierte Fantasy-Titelschrift und gut lesbare Text-/Zahlenschrift als Ersatz für *Fredoka* auswählen.
+- [ ] **Asset-Pipeline klären:** Herkunft von Modellen, Animationen und Texturen sowie Einbindung ohne Editor-Handarbeit.
+
 ---
 
 ## 12. Quellen und Analyse
